@@ -1,0 +1,21 @@
+{
+  "folders": [
+	{
+		"name": "COACHTECH",
+		"path": "../../../COACHTECH"
+	},
+	{
+		"path": "../../../share"
+	},
+	{
+		"path": "../../../share-api"
+	},
+	{
+		"path": "../../../saver"
+	},
+	{
+		"path": "../.."
+	}
+],
+  "settings": {}
+}

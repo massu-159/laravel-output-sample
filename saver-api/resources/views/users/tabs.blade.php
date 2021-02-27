@@ -1,5 +1,11 @@
 <ul class="nav nav-tabs nav-justified mt-3">
   <li class="nav-item">
+    <a class="nav-link text-muted {{ $hasScores ? 'active' : '' }}"
+      href="{{ route('users.scores', ['name' => $user->name]) }}">
+      節税スコア
+    </a>
+  </li>
+  <li class="nav-item">
     <a class="nav-link text-muted {{ $hasArticles ? 'active' : '' }}"
        href="{{ route('users.show', ['name' => $user->name]) }}">
       記事

@@ -30,6 +30,16 @@ class UserController extends Controller
         ]);
     }
 
+    public function scores(string $name)
+    {
+        $user = User::where('name', $name)->first();
+
+        
+        return view('users.scores', [
+            'user' => $user,
+        ]);
+    }
+
     public function followings(string $name)
     {
         $user = User::where('name', $name)->first()->load('followings.followers');

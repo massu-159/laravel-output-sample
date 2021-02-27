@@ -1,21 +1,28 @@
 {
-  "folders": [
-	{
-		"name": "COACHTECH",
-		"path": "../../../COACHTECH"
-	},
-	{
-		"path": "../../../share"
-	},
-	{
-		"path": "../../../share-api"
-	},
-	{
-		"path": "../../../saver"
-	},
-	{
-		"path": "../.."
-	}
-],
-  "settings": {}
+    "folders": [
+        {
+            "name": "COACHTECH",
+            "path": "../../../COACHTECH"
+        },
+        {
+            "name": "share",
+            "path": "../../../share"
+        },
+        {
+            "name": "share-api",
+            "path": "../../../share-api"
+        },
+        {
+            "name": "saver",
+            "path": "../../../saver"
+        },
+        {
+            "name": "saver-api",
+            "path": "../.."
+        },
+        {
+            "path": "../../../../BulletinBoard/BulletinBoard"
+        }
+    ],
+    "settings": {}
 }

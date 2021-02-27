@@ -27,6 +27,9 @@ Route::get('/tags/{name}', 'App\Http\Controllers\TagController@show')->name('tag
 Route::prefix('users')->name('users.')->group(function () {
     Route::get('/{name}', 'App\Http\Controllers\UserController@show')->name('show');
     Route::get('/{name}/likes', 'App\Http\Controllers\UserController@likes')->name('likes');
+
+    Route::get('/{name}/scores', 'App\Http\Controllers\UserController@scores')->name('scores');
+    
     Route::get('/{name}/followings', 'App\Http\Controllers\UserController@followings')->name('followings');
     Route::get('/{name}/followers', 'App\Http\Controllers\UserController@followers')->name('followers');
     Route::middleware('auth')->group(function () {

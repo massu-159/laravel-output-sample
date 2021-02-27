@@ -72,6 +72,14 @@ class User extends Authenticatable
         return $this->belongsToMany('App\Models\Article', 'likes')->withTimestamps();
     }
 
+
+
+    public function scores(): BelongsToMany
+    {
+        return $this->belongsToMany('App\Models\User', 'scores')->withTimestamps();
+    }
+
+
     public function isFollowedBy(?User $user): bool
     {
         return $user
